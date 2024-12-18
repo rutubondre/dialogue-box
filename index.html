@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dialog</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/header.png" class="img-header" alt="coding" />
+        <div>
+            <h1 class="header-text">coding</h1>
+            <img src="./img/qr-code.png" class="img-qr" alt="Qr code" />
+            <p class="qr-description">
+                scan the qr code to know more road to code...
+            </p>
+        </div>
+    </div>
+
+
+    <button type="button" class="btn" onclick="openModal()">Enroll now</button>
+
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="./img/close.png" class="close-icon" alt="close" onclick="closeModal()" />
+            <form class="form">
+                <h1 class="form-header">Enroll Now</h1>
+                <input type="text" placeholder="Enter your name" class="form-input" />
+                <input type="email" placeholder="Enter your email" class="form-input" />
+                <input type="text" placeholder="Enter your number" class="form-input" />
+                <input type="text" placeholder="Enter your collage name" class="form-input" />
+            </form>
+            <button type="button" class="btn">Proced to payment</button>
+        </div>
+    </div>
+    <script src="./js/script.js">
+    </script>
+</body>
+
+</html>
